@@ -10,5 +10,4 @@ asana/
 yoga_asan/
 .streamlit/
 __pycache__/
-labels.npy
 test.py
