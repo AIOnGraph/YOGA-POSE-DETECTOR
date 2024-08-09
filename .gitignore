@@ -1,0 +1,14 @@
+venv/
+asana/
+BHUJANG ASAN.npy
+TRIKON ASAN.npy
+PLANKS(MUKHA SVANASANA).npy
+SUKH ASAN.npy
+VRIKS ASAN.npy
+data/
+asana/
+yoga_asan/
+.streamlit/
+__pycache__/
+labels.npy
+test.py
