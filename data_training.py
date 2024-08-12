@@ -16,13 +16,13 @@ for i in os.listdir():
 	if i.split(".")[-1] == "npy" and not(i.split(".")[0] == "labels"):  
 		if not(is_init):
 			is_init = True 
-			print(i)
+			# print(i)
 			X = np.load(i)
-			print(X.shape,"shape")
+			# print(X.shape,"shape")
 			size = X.shape[0]
 			y = np.array([i.split('.')[0]]*size).reshape(-1,1)
 		else:
-			print(i)
+			# print(i)
 			X = np.concatenate((X, np.load(i)))
 			y = np.concatenate((y, np.array([i.split('.')[0]]*size).reshape(-1,1)))
 
@@ -44,7 +44,7 @@ counter = 0
 
 cnt = np.arange(X.shape[0])
 np.random.shuffle(cnt)
-print(cnt)
+# print(cnt)
 for i in cnt: 
 	X_new[counter] = X[i]
 	# print(y_new[counter],"y_new[counter]")
@@ -52,11 +52,11 @@ for i in cnt:
 	y_new[counter] = y[i]
 	counter = counter + 1
 
-print(X)
-print(X.shape)
+# print(X)
+# print(X.shape)
 # ip = Input(shape=(X.shape))
 ip = Input(shape=(X.shape[1],)) 
-print(ip)
+# print(ip)
 m = Dense(128, activation="tanh")(ip)
 m = Dense(64, activation="tanh")(m)
 

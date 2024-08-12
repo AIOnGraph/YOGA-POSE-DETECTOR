@@ -1,6 +1,4 @@
 
-
-
 import cv2
 from sample_utils import get_ice_servers
 import numpy as np
@@ -34,12 +32,12 @@ class VideoProcessor1(VideoProcessorBase):
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
         lst = []
-        window = np.zeros((1080, 1080, 3), dtype="uint8")
+        # window = np.zeros((1080, 1080, 3), dtype="uint8")
         # window = np.zeros((940, 940, 3), dtype="uint8")
         img = cv2.flip(img, 1)
         
         res = self.holis.process(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-        img = cv2.blur(img, (4, 4))
+        # img = cv2.blur(img, (4, 4))
         
         if res.pose_landmarks and inFrame(res.pose_landmarks.landmark):
             for i in res.pose_landmarks.landmark:
