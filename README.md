@@ -1,21 +1,19 @@
 # Yoga Asana Classifier
 <img src="yoga.png"/>
 <h1>Description</h1>
-Hi welcome to my new deep learning project "Yoga Asana Classifier / pose classifier ". This project as the name suggests can predict the yoga pose which you are doing in front of the webcam.<br>
-This project comprise of three python scripts namely,<br>
-Data Collection<br>
-Data Training<br>
-And finally Inference script.<br>
-As all of the name suggest do there respective work.<br>
+Hi welcome to my new deep learning project "Yoga Pose Detetor". This project as the name suggests can predict the yoga pose which you are doing in front of the webcam.<br>
 
 For this project I used mediapipe pose detection to detect the human body pose and after that I made model with simple Dense network using keras and trained the model on the data. After that i just ran the inference file to do the prediction.<br>
 
 <h1>Requirements</h1>
-<code>pip install mediapipe</code><br>
-<code>pip install keras</code><br>
-<code>pip install tensorflow</code><br>
-<code>pip install opencv-python</code><br>
-<code>pip install numpy</code><br>
+
+```
+pip install -r requirements.txt
+``` 
+then for running the streamlit app:
+``` 
+streamlit run inference.py
+``` 
 
 <h1>How to Run?</h1>
 <h2>Adding Data</h2>
@@ -23,7 +21,31 @@ For this project I used mediapipe pose detection to detect the human body pose a
  <h2>Training</h2>
   To train just run <b>python data_training.py</b> to train the model on newly added data.
   <h2>Running</h2>
-  To Run just run <b>python inference.py</b> and new window will pop up which will be running the predictions.
+  To Run just run <b>streamlit run inference.py</b> and new window will pop up which will be running the predictions.
+
+  ## Samples of Demo:
+  ### 1. BHUJANG ASANA:
+  <img src="Bhujang Asan.png"/>
+
+  ### 2. PLANKS:
+  <img src="Planks.png"/>
+
+  ### 3. SUKH ASANA:
+  ![alt text](<Sukh Asan.png>)
+
+  ### 4. TRIKON ASANA:
+  ![alt text](<Trikon Asan.png>)
+
+  ### 5. VRIK ASANA:
+  ![alt text](<Vrik asan.png>)
+
+
+
+  
+
+
+
+
   
 
 
