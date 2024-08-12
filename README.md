@@ -1,9 +1,21 @@
 # YOGA-POSE-DETECTOR
 <img src="yoga.png"/>
 <h1>Description</h1>
-Hi welcome to my new deep learning project "Yoga Pose Detector". This project as the name suggests can predict the yoga pose which you are doing in front of the webcam.<br>
 
-For this project I used mediapipe pose detection to detect the human body pose and after that I made model with simple Dense network using keras and trained the model on the data. After that i just ran the inference file to do the prediction.<br>
+The Yoga Pose Detector is an AI-powered web application that predicts yoga poses in real-time using webcam input. Leveraging MediaPipe's advanced pose detection technology, the application captures and analyzes human body movements to identify specific yoga asanas with precision.
+
+The core of the project is a deep learning model, constructed using a simple Dense network in Keras, and trained on a dataset of yoga poses. 
+
+### The project is organized into three key components:
+
+### Data Collection: 
+Gathers pose data from video or image input for training purposes.
+### Model Training:
+Utilizes the collected data to train the neural network model.
+### Inference:
+Deploys the trained model to predict and classify yoga poses during live sessions.
+
+The application is developed using Streamlit for the user interface and WebRTC for managing the webcam feed, ensuring a seamless and interactive user experience.
 
 <h1>How to use it: </h1>
 <h2>Run this command on terminal: </h2>
