@@ -1,4 +1,4 @@
-# Yoga Asana Classifier
+# YOGA-POSE-DETECTOR
 <img src="yoga.png"/>
 <h1>Description</h1>
 Hi welcome to my new deep learning project "Yoga Pose Detector". This project as the name suggests can predict the yoga pose which you are doing in front of the webcam.<br>
