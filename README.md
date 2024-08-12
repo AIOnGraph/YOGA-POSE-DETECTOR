@@ -1,7 +1,7 @@
 # Yoga Asana Classifier
 <img src="yoga.png"/>
 <h1>Description</h1>
-Hi welcome to my new deep learning project "Yoga Pose Detetor". This project as the name suggests can predict the yoga pose which you are doing in front of the webcam.<br>
+Hi welcome to my new deep learning project "Yoga Pose Detector". This project as the name suggests can predict the yoga pose which you are doing in front of the webcam.<br>
 
 For this project I used mediapipe pose detection to detect the human body pose and after that I made model with simple Dense network using keras and trained the model on the data. After that i just ran the inference file to do the prediction.<br>
 
