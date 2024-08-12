@@ -11,8 +11,8 @@ import streamlit as st
 
 def inFrame(lst):
     return (
-        lst[28].visibility > 0.6 and lst[27].visibility > 0.6 and 
-        lst[15].visibility > 0.6 and lst[16].visibility > 0.6
+        lst[28].visibility > 0.40 and lst[27].visibility > 0.40 and 
+        lst[15].visibility > 0.40 and lst[16].visibility > 0.40
     )
 
 model = load_model("model.h5")
