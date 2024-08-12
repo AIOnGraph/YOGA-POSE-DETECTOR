@@ -5,6 +5,13 @@ Hi welcome to my new deep learning project "Yoga Pose Detector". This project as
 
 For this project I used mediapipe pose detection to detect the human body pose and after that I made model with simple Dense network using keras and trained the model on the data. After that i just ran the inference file to do the prediction.<br>
 
+<h1>How to use it: </h1>
+<h2>Run this command on terminal: </h2>
+
+```
+git clone https://github.com/AIOnGraph/YOGA-POSE-DETECTOR.git
+``` 
+
 <h1>Requirements</h1>
 
 ```
