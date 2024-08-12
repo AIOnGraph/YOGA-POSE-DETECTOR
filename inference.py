@@ -15,7 +15,7 @@ def inFrame(lst):
         lst[15].visibility > 0.40 and lst[16].visibility > 0.40
     )
 
-model = load_model("model.h5")
+# model = load_model("model.h5")
 label = np.load("labels.npy")
 
 holistic = mp.solutions.pose
@@ -24,7 +24,7 @@ drawing = mp.solutions.drawing_utils
 
 class VideoProcessor1(VideoProcessorBase):
     def __init__(self):
-        self.model = model
+        self.model = load_model("model.h5")
         self.label = label
         self.holis = holis
         self.drawing = drawing
